@@ -1,12 +1,5 @@
 
 import java.util.Scanner;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * @author tpbig
@@ -25,12 +18,12 @@ public class Paint {
     numRooms = keyboard.nextInt();
  
 //ask for each room size, send to method, and return price per room
-    for(int i=0;i <= numRooms; ++i){
-      System.out.println("Room size (sq ft): ");
+    for(int i=0;i < numRooms; ++i){
+      System.out.println("Room " + (i+1) + " size (sq ft): ");
       roomSize = keyboard.nextInt();
       System.out.println("Paint Price: ");
       paintPrice = keyboard.nextFloat();
-      totPrice += paintPrice;
+      totPrice += roomCalc(roomSize, paintPrice);
     }
 //add sum of each returned room price and output total
     System.out.println("Total Price: $" + totPrice);
