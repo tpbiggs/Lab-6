@@ -34,7 +34,7 @@ public class main {
         double rad = keyboard.nextDouble();
         
         Circle myCircle = new Circle(rad);
-        
+         
         System.out.println("Area: " + myCircle.area());
         System.out.println("Diameter: " + myCircle.diameter());
         System.out.println("Circumference: " + myCircle.circumference());
