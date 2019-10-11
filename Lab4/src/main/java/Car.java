@@ -29,7 +29,7 @@ public class Car {
     public void gas(){
         speed += 5;
         
-        System.out.println("Speed: " + speed);
+
     }
     
     public int getSpeed(){
